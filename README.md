@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: hanshazairi/42-norminette-action@1.0.0
+      - uses: hanshazairi/42-norminette-action@v1.0.0
 ```
 Next, you may choose to add a badge to your repo by adding the below to your `README.md`:
 ```markdown
