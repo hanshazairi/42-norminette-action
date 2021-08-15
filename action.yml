@@ -1,0 +1,9 @@
+name: '42 Norminette Linter'
+author: 'Hans Hazairi'
+description: 'Run latest-release Norminette check on 42 projects'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'play-circle'
+  color: 'green'
