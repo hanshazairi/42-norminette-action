@@ -1,9 +1,15 @@
 name: '42 Norminette Linter'
 author: 'Hans Hazairi'
 description: 'Run latest-release Norminette check on 42 projects'
+inputs:
+  exclude-dir:
+    description: 'Directory to exclude from Norminette check'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.exclude-dir }}
 branding:
   icon: 'play-circle'
   color: 'green'
